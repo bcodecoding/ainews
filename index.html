@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости из мира Нейросетей: Последние 10 дней (Июнь-Июль 2025)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        :root {
+            --bg-color: #121218;
+            --card-bg-color: #1a1a22;
+            --primary-color: #ff6600; /* Оранжевый акцент */
+            --primary-hover-color: #e65c00;
+            --text-color: #e2e8f0;
+            --text-muted-color: #94a3b8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content {
+            padding-top: 80px;
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(18, 18, 24, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav a {
+            color: var(--text-muted-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .nav a:hover, .nav a.active {
+            color: var(--primary-color);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        header h1 .highlight {
+            color: var(--primary-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-muted-color);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            border-left: 4px solid var(--primary-color);
+            background: linear-gradient(145deg, var(--card-bg-color), #21212a);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .news-item {
+            margin-bottom: 2.5rem;
+        }
+        
+        .news-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .news-item h3 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .news-item .meta {
+            font-size: 0.9rem;
+            color: var(--text-muted-color);
+            margin-bottom: 1rem;
+        }
+        
+        .meta .tag {
+            display: inline-block;
+            background-color: var(--border-color);
+            padding: 0.2rem 0.6rem;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white !important;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: var(--primary-hover-color);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 2rem;
+            color: var(--text-muted-color);
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#company-updates" class="active">Анонсы компаний</a>
+            <a href="#research">Исследования</a>
+            <a href="#hardware">Железо и Инфраструктура</a>
+            <a href="#safety">Безопасность</a>
+        </div>
+    </nav>
+
+    <div class="container content">
+        <header>
+            <h1>Новости из мира <span class="highlight">AI</span></h1>
+            <p>Ключевые события и анонсы в сфере нейросетей за последние 10 дней (23 июня – 3 июля 2025 года).</p>
+        </header>
+
+        <main>
+            <section id="company-updates" class="section">
+                <h2>Анонсы компаний</h2>
+                
+                <div class="news-item">
+                    <h3>Anthropic провела эксперимент с "AI-CEO"</h3>
+                    <p class="meta">27 июня 2025 <span class="tag">AI-Агенты</span></p>
+                    <p>Компания Anthropic, разработчик моделей Claude, провела необычный эксперимент: они создали AI-агента, наделили его стартовым капиталом и поставили задачу "создать и запустить компанию". Результаты оказались "причудливыми": агент успешно анализировал рынок, но когда дело дошло до реальных действий, он начал пытаться нанимать фрилансеров-людей для выполнения задач, которые не мог сделать сам, например, для физической регистрации бизнеса. Эксперимент показал как сильные стороны современных AI в планировании, так и их текущие ограничения в взаимодействии с реальным миром.</p>
+                </div>
+                
+                <div class="news-item">
+                    <h3>Salesforce представила Agentforce 3</h3>
+                    <p class="meta">24 июня 2025 <span class="tag">Enterprise AI</span></p>
+                    <p>Salesforce анонсировала Agentforce 3 — новую платформу, предназначенную для создания, управления и мониторинга AI-агентов в корпоративной среде. Ключевая особенность — "прозрачность" работы агентов. Компании смогут отслеживать, какие решения принимает AI, на основе каких данных он это делает, и как это влияет на бизнес-процессы. Это важный шаг для внедрения сложных автономных систем в крупном бизнесе, где контроль и аудит критически важны.</p>
+                </div>
+
+                <div class="news-item">
+                    <h3>Huawei выпустила HarmonyOS 6 с новыми AI-агентами</h3>
+                    <p class="meta">24 июня 2025 <span class="tag">Мобильный AI</span></p>
+                    <p>Huawei представила новую версию своей операционной системы HarmonyOS 6, сделав большой акцент на интеграцию AI. В системе появились проактивные AI-агенты, которые призваны составить конкуренцию решениям от Apple и Google. Агенты могут автоматизировать рутинные задачи, управлять устройствами "умного дома" и предлагать контекстные действия пользователю, глубже интегрируясь в экосистему устройств Huawei.</p>
+                </div>
+
+            </section>
+            
+            <section id="research" class="section">
+                <h2>Исследования и прорывы</h2>
+
+                <div class="news-item">
+                    <h3>Прорыв в квантовых вычислениях обещает ускорение для AI</h3>
+                    <p class="meta">30 июня 2025 <span class="tag">Quantum + AI</span></p>
+                    <p>Исследовательская группа, используя 127-кубитный процессор от IBM, заявила о достижении "безусловного экспоненциального превосходства" над классическими компьютерами. Упрощая, им удалось решить определенную задачу на квантовом компьютере в тысячи раз быстрее, чем это возможно на самых мощных суперкомпьютерах. Хотя до создания полноценного квантового компьютера для AI еще далеко, такие прорывы приближают эру, когда обучение сверхсложных нейросетей может занять минуты, а не месяцы.</p>
+                </div>
+
+                <div class="news-item">
+                    <h3>AI научился играть в бадминтон</h3>
+                    <p class="meta">25 июня 2025 <span class="tag">Робототехника</span></p>
+                    <p>Китайские инженеры продемонстрировали четырехногого робота, способного играть в бадминтон с человеком. Используя камеры и алгоритмы машинного обучения, робот анализирует траекторию волана в реальном времени, предугадывает движения оппонента и быстро перемещается по площадке для ответного удара. Это демонстрация значительного прогресса в области AI для робототехники, требующей быстрой реакции и координации.</p>
+                </div>
+            </section>
+            
+            <section id="hardware" class="section">
+                <h2>Железо и Инфраструктура</h2>
+                
+                <div class="news-item">
+                    <h3>Nvidia вновь стала самой дорогой компанией мира</h3>
+                    <p class="meta">26 июня 2025 <span class="tag">Рынок</span></p>
+                    <p>На фоне непрекращающегося спроса на AI-ускорители, Nvidia вновь вернула себе титул самой дорогой компании мира, обойдя Microsoft. Это подчеркивает, что "железо" для нейросетей остается фундаментом всей индустрии, а инвесторы верят в дальнейший экспоненциальный рост AI.</p>
+                </div>
+                
+                <div class="news-item">
+                    <h3>Broadcom анонсировала новые энергоэффективные чипы для AI</h3>
+                    <p class="meta">28 июня 2025 <span class="tag">Железо</span></p>
+                    <p>Одной из главных проблем роста AI является огромное энергопотребление дата-центров. Broadcom представила новое поколение сетевых чипов, специально разработанных для AI-кластеров. Они обещают значительно снизить потребление энергии при передаче данных между тысячами GPU, что делает масштабирование AI более экологичным и дешевым.</p>
+                </div>
+            </section>
+            
+            <section id="safety" class="section">
+                <h2>Безопасность и Регулирование</h2>
+
+                <div class="news-item">
+                    <h3>Обнаружены новые варианты вредоносного AI "WormGPT"</h3>
+                    <p class="meta">25 июня 2025 <span class="tag">Кибербезопасность</span></p>
+                    <p>Эксперты по кибербезопасности сообщили о появлении новых версий WormGPT — зловредного AI, созданного для автоматизации фишинговых атак и написания вредоносного кода. Новые варианты основаны на открытых моделях, что усложняет их обнаружение. Это событие вновь подняло дискуссию о необходимости контроля над распространением и использованием мощных open-source моделей.</p>
+                </div>
+
+                 <div class="news-item">
+                    <h3>Акт NO FAKES: в США обсуждают закон против дипфейков</h3>
+                    <p class="meta">25 июня 2025 <span class="tag">Регулирование</span></p>
+                    <p>В Конгрессе США продолжаются активные дебаты по поводу законопроекта NO FAKES Act. Его цель — предоставить людям право контролировать использование своего образа и голоса в AI-генерируемом контенте. Хотя закон направлен на борьбу с дипфейками, критики опасаются, что он может ограничить свободу слова и творческое использование AI.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div style="margin-bottom: 1rem;">
+                <a href="https://t.me/nousernameai" target="_blank" class="button">Мой Telegram-канал</a>
+            </div>
+            <p>Этот дайджест подготовлен на основе анализа новостей из открытых источников.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav a');
+
+            // --- Анимация появления секций при прокрутке ---
+            const sectionObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            sections.forEach(section => sectionObserver.observe(section));
+
+            // --- Плавная прокрутка и активная ссылка в навигации ---
+            const navObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                           link.classList.remove('active');
+                           if(link.getAttribute('href') === `#${id}`) {
+                               link.classList.add('active');
+                           }
+                        });
+                    }
+                });
+            }, { rootMargin: "-40% 0px -60% 0px" });
+            
+            sections.forEach(sec => navObserver.observe(sec));
+
+            navLinks.forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                         window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
